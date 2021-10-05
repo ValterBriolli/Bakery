@@ -1,9 +1,9 @@
-/* Error: Invalid Sass identifier " variable"
+/* Error: expected newline.
  *   ,
- * 1 | @use ' variable'
- *   | ^^^^^^^^^^^^^^^^
+ * 4 |     background-color: variable.$background-color:
+ *   |                                                 ^
  *   '
- *   sass\main.sass 1:1  root stylesheet */
+ *   sass\main.sass 4:49  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Invalid Sass identifier \" variable\"\a   \2577 \a 1 \2502  @use ' variable'\a   \2502  ^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\main.sass 1:1  root stylesheet";
+  content: "Error: expected newline.\a   \2577 \a 4 \2502      background-color: variable.$background-color:\a   \2502                                                  ^\a   \2575 \a   sass\\main.sass 4:49  root stylesheet";
 }
