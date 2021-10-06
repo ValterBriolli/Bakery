@@ -28,15 +28,33 @@ body
         color: variable.$primary-color
         font-size: 3rem
 
+        &:hover
+            color: variable.$secondary-color
+                        
+
     &-navbar
         
         ul
             height: 100%
             @include mixins.flex-center
 
+            li
+                margin: 0 1rem
+                text-transform: uppercase
+                font-size: .8rem
+            
+                .active
+                     color: variable.$secondary-color
+            
+                a
+                    &:hover
+                        color: variable.$secondary-color
+
+
+
 
     
-    &-brand
+    
 
 
     
