@@ -1,53 +1,17 @@
-* {
-  font-family: "Josefin Sans";
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: Expected expression.
+ *    ,
+ * 84 |             font-weight: 
+ *    |                          ^
+ *    '
+ *   sass\main.sass 84:26  root stylesheet */
 
-body {
-  background-color: #000;
-  color: #777;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a    \2577 \a 84 \2502              font-weight: \d\a    \2502                           ^\a    \2575 \a   sass\\main.sass 84:26  root stylesheet";
 }
-body a {
-  color: #777;
-  text-decoration: none;
-  transition: 0.4s;
-}
-body ul {
-  list-style: none;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1170px;
-  padding: 1.5rem 0;
-  margin: 0 auto;
-}
-.header-brand {
-  color: #fff;
-  font-size: 3rem;
-}
-.header-brand:hover {
-  color: #20c997;
-}
-.header-navbar ul {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header-navbar ul li {
-  margin: 0 1rem;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-}
-.header-navbar ul li .active {
-  color: #20c997;
-}
-.header-navbar ul li a:hover {
-  color: #20c997;
-}
-
-/*# sourceMappingURL=main.css.map */

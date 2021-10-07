@@ -50,7 +50,38 @@ body
                     &:hover
                         color: variable.$secondary-color
 
+    &-social-media
 
+        ul
+            @include mixins.flex-center
+            height: 100%
+
+            li 
+                margin: 0 1rem
+
+                a  
+               
+                     &:hover
+                        color: variable.$primary-color
+
+.gallery
+
+    @include mixins.container
+    @include mixins.flex-center
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 0
+
+
+
+    &-card
+        width: 31%
+        height: 400px
+        margin-bottom: 4%
+
+        &-title
+            font-size: 2rem
+            font-weight: 
 
 
     
