@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Josefin Sans";
   margin: 0;
@@ -97,6 +98,70 @@ body ul {
 }
 .gallery #card-1 {
   background-image: url("../img/rustico.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-2 {
+  background-image: url("../img/Campones.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-3 {
+  background-image: url("../img/Baguetes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-4 {
+  background-image: url("../img/PãesDoces.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-5 {
+  background-image: url("../img/Donuts.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-6 {
+  background-image: url("../img/Croissant.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-7 {
+  background-image: url("../img/Folhados.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-8 {
+  background-image: url("../img/Pretzel.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-9 {
+  background-image: url("../img/Brioches.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
