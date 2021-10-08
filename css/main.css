@@ -26,6 +26,11 @@ body ul {
   padding: 1.5rem 0;
   margin: 0 auto;
 }
+@media (max-width: 425px) {
+  .header {
+    padding: 1.1rem;
+  }
+}
 .header-brand {
   color: #fff;
   font-size: 3rem;
@@ -38,6 +43,11 @@ body ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 425px) {
+  .header-navbar ul {
+    display: none;
+  }
 }
 .header-navbar ul li {
   margin: 0 1rem;
@@ -55,6 +65,11 @@ body ul {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+@media (max-width: 425px) {
+  .header-social-media ul {
+    display: none;
+  }
 }
 .header-social-media ul li {
   margin: 0 1rem;
@@ -74,10 +89,26 @@ body ul {
   justify-content: space-between;
   padding: 0;
 }
+@media (max-width: 425px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
 .gallery-card {
   width: 31%;
   height: 400px;
   margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+@media (max-width: 425px) {
+  .gallery-card {
+    width: 90%;
+    margin-bottom: 6%;
+  }
 }
 .gallery-card-title {
   font-size: 2rem;
@@ -107,7 +138,7 @@ body ul {
 .gallery #card-1:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gardient rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("../img/rustico.jpg");
+  background-image: linear-gardient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/rustico.jpg");
 }
 .gallery #card-2 {
   background-image: url("../img/Campones.jpg");
@@ -120,7 +151,7 @@ body ul {
 .gallery #card-2:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gardient rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("../img/Campones.jpg");
+  background-image: linear-gardient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Campones.jpg");
 }
 .gallery #card-3 {
   background-image: url("../img/Baguetes.jpg");
@@ -133,7 +164,7 @@ body ul {
 .gallery #card-3:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gardient rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("../img/Baguetes.jpg");
+  background-image: linear-gardient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Baguetes.jpg");
 }
 .gallery #card-4 {
   background-image: url("../img/PãesDoces.jpg");
@@ -146,7 +177,7 @@ body ul {
 .gallery #card-4:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gardient rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("../img/PãesDoces.jpg");
+  background-image: linear-gardient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/PãesDoces.jpg");
 }
 .gallery #card-5 {
   background-image: url("../img/Donuts.jpg");
@@ -159,7 +190,7 @@ body ul {
 .gallery #card-5:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gardient rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("../img/Donuts.jpg");
+  background-image: linear-gardient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Donuts.jpg");
 }
 .gallery #card-6 {
   background-image: url("../img/Croissant.jpg");
@@ -172,7 +203,7 @@ body ul {
 .gallery #card-6:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gardient rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("../img/Croissant.jpg");
+  background-image: linear-gardient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Croissant.jpg");
 }
 .gallery #card-7 {
   background-image: url("../img/Folhados.jpg");
@@ -185,7 +216,7 @@ body ul {
 .gallery #card-7:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gardient rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("../img/Folhados.jpg");
+  background-image: linear-gardient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Folhados.jpg");
 }
 .gallery #card-8 {
   background-image: url("../img/Pretzel.jpg");
@@ -198,7 +229,7 @@ body ul {
 .gallery #card-8:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gardient rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("../img/Pretzel.jpg");
+  background-image: linear-gardient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Pretzel.jpg");
 }
 .gallery #card-9 {
   background-image: url("../img/Brioches.jpg");
@@ -211,7 +242,16 @@ body ul {
 .gallery #card-9:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gardient rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("../img/Brioches.jpg");
+  background-image: linear-gardient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Brioches.jpg");
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  font-weight: bold;
+  color: #20c997;
 }
 
 /*# sourceMappingURL=main.css.map */
